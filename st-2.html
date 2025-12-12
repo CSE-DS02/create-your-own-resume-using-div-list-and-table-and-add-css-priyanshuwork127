@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+html,*{
+margin:0px;
+padding:0px;
+}
+.a{
+background-color:#CCC;
+border:10px solid;
+}
+@media(min-width:900px){
+#main{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: 300px;
+gap:10px;
+text-align: center;
+}
+}
+@media(max-width:899px) and (min-width: 600px){
+#main{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 300px;
+gap:10px;
+text-align: center;
+}
+}
+@media(max-width:600px) and (min-width:10px){
+main{
+display: grid;
+grid-template-rows: repeat(1,1fr);
+grid-template-columns: 300px;
+gap:10px;
+text-align: center;
+}
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+</div>
+</body>
+</html>
