@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            text-align: center;
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+        }
+        #main{
+            height:600px;
+            width:400px;
+            border:2 px solid;
+            display:grid;
+            grid-template-rows:100px 400px 100px;
+            background-color: rgb(255, 255, 255);
+            gap:10px;
+        }
+        .a{
+            background-color: pink;
+
+        }
+        #r{
+            display:grid;
+            grid-template-columns:195px 195px;
+            gap:10px;
+        }
+        #bx{
+            background-color: rgb(133, 171, 171);
+            display:grid;
+            grid-template-rows: repeat(1fr);
+            gap:10px;
+            border:2px solid;
+        }
+        .b1{
+            border:2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="a"><h1><b>Logo</b></h1></div>
+        <div class="a" id="r" style="background-color: white">
+            <div class="b"><h1><b>Style bar navigation</b></h1></div>
+            <div class="b" id="bx">
+                <div class="b1"><h1><b>Header</b></h1></div>
+                <div class="b1"><h1><b>Body</b></h1></div>
+            </div>
+        </div>
+        <div class="a" >
+            <!-- <div class="b"></div>
+            <div class="b">
+                <div class="b1"></div>
+                <div class="b1"></div>
+            </div> -->
+            <h1><b>Footer</b></h1>
+        </div>
+        <!-- <div class="a"></div> -->
+    </div>
+</body>
+</html>

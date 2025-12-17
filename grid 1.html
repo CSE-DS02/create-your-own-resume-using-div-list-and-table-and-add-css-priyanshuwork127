@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 1</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            text-align:center;
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+        }
+        main{
+            height:auto;
+            width: 414px;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-rows:100px 300px 100px;
+            gap:10px;
+        }
+        .a{
+            /* border:1px solid; */
+            background-color: rgb(186, 122, 122);
+        }
+        #a1{
+            display:grid;
+            grid-template-columns:100px 300px;
+            gap:10px;
+            background-color: rgb(255, 255, 255);
+        }
+        #b1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+        }
+        .c{
+            background-color: rgb(158, 217, 217);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="a"><h1><b>Hello world!</b></h1></div>
+        <div class="a" id="a1">
+            <div class="b" style="background-color: rgb(149, 124, 124);"><h1><b>Aside</b></h1></div>
+            <div class="b" id="b1">
+                <div class="c">box 1</div>
+                <div class="c">box 2</div>
+                <div class="c">box 3</div>
+                <div class="c">box 4</div>
+            </div>
+        </div>
+        <div class="a"><h1><b>footer</b></h1></div>
+    </main>
+</body>
+</html>
